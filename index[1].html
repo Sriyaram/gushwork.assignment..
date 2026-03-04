@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gushwork Assignment | Pixel Perfect Design</title>
+    <link rel="stylesheet" href="/styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Sticky Header (Initially Hidden) -->
+    <div class="sticky-header">
+        <div class="container sticky-header-content">
+            <div class="logo">GUSH.</div>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#product">Product</a></li>
+                    <li><a href="#specs">Specs</a></li>
+                </ul>
+            </nav>
+            <button class="buy-btn" style="padding: 8px 24px; font-size: 12px;">Pre-order Now</button>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="container">
+        <div class="logo">GUSH.</div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Overview</a></li>
+                <li><a href="#product">Features</a></li>
+                <li><a href="#specs">Specifications</a></li>
+                <li><a href="#support">Support</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <a href="#" style="color: white; text-decoration: none; font-size: 14px; opacity: 0.7;">Sign In</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section (First Fold) -->
+        <section id="hero" class="hero container">
+            <h1>The Future of<br>Work is Here.</h1>
+            <p>Experience unparalleled precision and performance with the all-new Gushwork workstation. Designed for creators, built for speed.</p>
+            <div style="margin-top: 40px; display: flex; gap: 16px;">
+                <button class="buy-btn">Get Started</button>
+                <button style="background: transparent; border: 1px solid white; color: white; padding: 16px 48px; border-radius: 2px; font-weight: 600; cursor: pointer;">Learn More</button>
+            </div>
+        </section>
+
+        <!-- Product Section with Carousel -->
+        <section id="product" class="container product-section">
+            <!-- Carousel Column -->
+            <div class="carousel-column">
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <div class="carousel-slide">
+                            <img src="https://picsum.photos/seed/gush1/1200/1200" alt="Product View 1" referrerPolicy="no-referrer">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://picsum.photos/seed/gush2/1200/1200" alt="Product View 2" referrerPolicy="no-referrer">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://picsum.photos/seed/gush3/1200/1200" alt="Product View 3" referrerPolicy="no-referrer">
+                        </div>
+                    </div>
+                    
+                    <!-- Carousel Navigation -->
+                    <div class="carousel-nav">
+                        <button class="carousel-btn prev" aria-label="Previous Slide">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                        </button>
+                        <button class="carousel-btn next" aria-label="Next Slide">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                        </button>
+                    </div>
+                </div>
+                <p style="margin-top: 16px; font-size: 12px; opacity: 0.4; text-align: center;">Hover to zoom (Desktop) / Tap to zoom (Mobile)</p>
+            </div>
+
+            <!-- Info Column -->
+            <div class="product-info">
+                <span style="text-transform: uppercase; letter-spacing: 2px; font-size: 12px; opacity: 0.5; display: block; margin-bottom: 12px;">Limited Edition</span>
+                <h2>Gushwork Pro X1</h2>
+                <div class="price">$2,499.00</div>
+                <p>The Gushwork Pro X1 is our most advanced workstation yet. Featuring a custom-engineered chassis and the latest in thermal management technology, it's designed to handle your most demanding workflows without breaking a sweat.</p>
+                
+                <div style="margin-bottom: 40px;">
+                    <h4 style="margin-bottom: 16px; font-size: 14px; opacity: 0.8;">Key Features:</h4>
+                    <ul style="list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; font-size: 14px; opacity: 0.6;">
+                        <li>• 128GB Unified Memory</li>
+                        <li>• 8TB SSD Storage</li>
+                        <li>• Liquid Cooling System</li>
+                        <li>• 10Gb Ethernet</li>
+                        <li>• 4x Thunderbolt 4</li>
+                        <li>• Studio Grade Audio</li>
+                    </ul>
+                </div>
+
+                <button class="buy-btn">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Zoom Preview Panel (Desktop) -->
+    <div class="zoom-preview"></div>
+
+    <!-- Mobile Zoom Overlay -->
+    <div class="mobile-zoom-overlay">
+        <img src="" alt="Zoomed View">
+    </div>
+
+    <footer class="container">
+        <p>&copy; 2026 Gushwork Assignment. All rights reserved. Pixel-perfect implementation.</p>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>
